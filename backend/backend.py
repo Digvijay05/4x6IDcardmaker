@@ -11,13 +11,14 @@ def remove_password(input_file, output_file, password):
         with open(output_file, "wb") as output:
             writer = PdfWriter()
             for page in pdf.pages:
+
                 writer.add_page(page)
             writer.write(output)
             writer.close()
 
 
 def convert_to_images(input_file, output_directory):
-    images = convert_from_path(input_file)
+    images = convert_from_path(input_file,poppler_path="")
 
     for i, image in enumerate(images):
         output_file = f"{output_directory}/aadhar_jpg{i + 1}.jpg"
