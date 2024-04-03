@@ -97,12 +97,12 @@ def create_image(front, back, output_file: str):
     im.close()
     # im.show()
 
-
-if __name__ == "__main__":
-    input_file = "..\\d adhar.pdf"
-    output_file = "..\\temp\\temp_adhar.pdf"
-    output_directory = "temp"
-    password = ""
-    remove_password(input_file, output_file, password)
-    convert_to_images(output_file, output_directory)
-    delete_temp_data()
+# Testing Functionality
+# if __name__ == "__main__":
+#     input_file = "..\\d adhar.pdf"
+#     output_file = "..\\temp\\temp_adhar.pdf"
+#     output_directory = "temp"
+#     password = ""
+#     remove_password(input_file, output_file, password)
+#     convert_to_images(output_file, output_directory)
+#     delete_temp_data()
